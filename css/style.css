@@ -1,0 +1,791 @@
+:root {
+	--blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #354f33;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #354f33;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --primary: #f0bc25;
+    --secondary: #7f7f7f;
+    --success: #354f33;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #7f7f7f;
+}
+
+/* ===============  Basic css here ===============*/
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  body{
+	  margin: 0;
+	  padding: 0;
+	  font-family: 'Roboto', sans-serif;
+  
+  }
+  .japanese-font{
+		  font-family: 'M PLUS 1p', sans-serif;
+  }
+  ul{
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  a{
+	  text-decoration: none;
+  }
+  
+  p,h1,h2,h3,h4,h5,h6{
+	  margin: 0;
+	  padding: 0;
+  }
+  .btn{
+	  background: #343a40;
+	  color: #fff;
+	  padding: 30px 100px;
+	  font-size: 20px;
+	  font-weight: 700;
+	  position: relative;
+  }
+  .responsive-mebile-menu-icon{
+	  display: none;
+  }
+  /*============== Header Css Start ====================*/
+  .sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  min-width: 100%;
+	  width: -ms-available;          /* WebKit-based browsers will ignore this. */
+	  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+	  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+	  width: fill-available;
+	  background: #1B1B1B;
+	  transition: .5s;
+  }
+  .sticky .level-menu{
+  
+	  position: relative;
+	  left: -18%;
+  
+  }
+  .sticky .level-menu ul li a{
+	  font-size: 18px !important;
+	  font-weight: 500;
+	  padding: 0px 0px 0px 80px;
+	  color: white;
+	  font-family: 'M PLUS 1p', sans-serif;
+  
+  }
+  .sticky .header-top span a{
+	  color: white;
+  
+  }
+  .sticky .header-top span{
+	  padding: 0px 0px 0px 23px;
+	  font-size: 18px;
+	  color: white;
+	  font-weight: 300;
+  }
+  header{
+	  padding: 18px 120px;
+	  position: relative;
+	  z-index: 999;
+  }
+  .mobile_images{
+	  display: none;
+  }
+  .header-top{
+	  text-align: right;
+	  padding-right: 3px;
+	  /*margin-top: 22px;*/
+  }
+  .header-top span{
+	  padding: 0px 0px 0px 23px;
+	  font-size: 18px;
+	  color: #F8FFFF;
+	  font-weight: 300;
+  }
+  .header-top span a{
+	  color:#fff;
+  
+  }
+  nav{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  .logo img{
+	  height: 62px;
+	  margin-top: -10px;
+  }
+  .level-menu ul{
+	  display: flex;
+	  margin: 15px 0px;
+  }
+  .level-menu ul li a{
+	  font-size: 18px !important;
+	  font-weight: 500;
+	  padding: 0px 0px 0px 80px;
+	  color: #fff;
+	  font-family: 'M PLUS 1p', sans-serif;
+  
+  }
+  
+  /*============== Header Css End ====================*/
+  
+  
+  /*============== Banner Section Css Start ====================*/
+  .banner-section{
+	  position: relative;
+  }
+  #myVideo{
+	  width: 100%;
+  }
+  .video{
+	  margin-top: -127px;
+	  position: relative;
+	  z-index: -1;
+  }
+  .banner-section-content{
+	  position: absolute;
+	  top: 50%;
+	  color: #fff;
+	  padding: 0px 120px;
+  }
+  .banner-section-content h1{
+	  transform: scale(4.5);
+	  font-size: 20px;
+	  padding-left: 133px;
+	  font-family: 'Roboto', sans-serif;
+	  color: #fff;
+	  /*line-height: 90px;*/
+  }
+  .banner-section-content p{
+	  font-size: 20px;
+	  padding-top: 135px;
+	  position: relative;
+  }
+  .banner-section-content p:after{
+	  content: "";
+	  position: absolute;
+	  background: #fff;
+	  height: 1px;
+	  width: 100%;
+	  /* right: -36px; */
+	  margin-left: 10px;
+	  bottom: 11px;
+  }
+  /*============== Banner Section Css End ====================*/
+  
+  
+  
+  /*============== What f1 start ====================*/
+  .what-f1-title{
+	  font-size: 60px;
+	  font-weight: 700;
+	  font-family: 'Roboto', sans-serif;
+  }
+  .what-f1{
+	  /* background: #01A3AE; */
+	  background: #1B1B1B;
+	  color: #fff;
+	  padding: 51px 120px;
+	  position: relative;
+	  /*height: 336px;*/
+	  margin-top: -6px;
+	  margin-bottom: 230px;
+	  /*clip-path: polygon(100% 0%, 100% 93%, 0% 57%, 0% 0%);*/
+  
+  }
+  .what-f1:before {
+	  content: "";
+	  position: absolute;
+	  bottom: -125px;
+	  height: 201px;
+  
+	  left: 0;
+	  width: 100%;
+	  background:#1B1B1B;
+	  padding: 0px !important;
+	  transform: skew(0deg, 6deg);
+	  z-index: -1;
+	  margin-bottom: 24px;
+	  
+  }
+  .bg-image {
+	  position: absolute;
+	  right: 3px;
+	  top: 32px;
+	  /*width: 383px;*/
+	  overflow: hidden;
+	  z-index: 1;
+	  opacity: 0.3;
+  }
+  
+  .section-content-f1{
+	  padding-top: 30px;
+  }
+  
+  .what-f1-title-content{
+	  font-size: 16px !important;
+	  font-weight: 500;
+	  margin-top: 15px;
+  line-height: 30px;
+  padding: 0px 141px 0px 0px;
+	  font-family: 'Roboto', sans-serif;
+  
+  }
+  .section-content-f1 p{
+  font-family: 'M PLUS 1p', sans-serif;
+  }
+  /*============== What f1 end   ====================*/
+  
+  
+  
+  
+  /*============== Services Css Start ====================*/
+  .service-section{
+	  margin-top: -119px;
+  }
+  .sinlge-services{
+	  display: grid;
+	  grid-template-columns: 50% 50%;
+	  align-items: center;
+  }
+  .single-service-left img{
+	  width: 90%;
+  }
+  .single-service-right img{
+	  width: 90%;
+	  text-align: left;
+  }
+  
+  .single-service-content{
+	  padding: 0px 118px 0px 31px;
+  
+  }
+  .single-service-content h1{
+	  font-size: 41px;
+	  font-weight: 900;
+	  color: #1B1B1B;
+	  font-family:'Roboto', sans-serif;
+  
+  }
+  .single-service-content p{
+	  font-size: 18px;
+	  text-align: left;
+	  margin-top: 21px;
+	  color: #000;
+	  line-height: 30px;
+	  font-family: 'Roboto', sans-serif;
+  
+  }
+  .single-service-left{
+	  text-align: left;
+	  /*padding: 0px 118px 0px 31px;*/
+  }
+  .single-service-right{
+	  /*padding: 0px 31px 0px 118px;*/
+	  text-align: right;
+  }
+  .single-service-left-content{
+	  padding: 0px 66px 0px 120px;
+  }
+  .single-service-right-image{
+	  width: 95% !important;
+  }
+  .sinlge-services{
+	  margin: 48px 0px 40px 0px;
+  }
+  /*============== Services Css end ====================*/
+  
+  
+  
+  /*============== Services Css end ====================*/
+  .recruits-section{
+	  background: #1B1B1B;
+	  color: #fff;
+	  height: 840px;
+	  /* transform: skew(0deg, 6deg); */
+	  clip-path: polygon(100% 21%, 100% 89%, 0% 74%, 0% 0%);
+	  padding: 0px 120px;
+  }
+  
+  /*============== Services Css end ====================*/
+  
+  .main-recruits{
+	  display: flex;
+	  
+	  position: relative;
+	  top: -17px;
+  }
+  .recruits{
+	  padding: 50px 120px;
+	  background: #1B1B1B;
+	  color: #fff;
+		height: 740px;
+	  clip-path: polygon(100% 22%, 100% 95%, 0% 74%, 0% 0%); 
+	  position: relative; 
+  }
+
+  .recruits .recruits-title {
+	  margin-top: 160px;
+  }
+  .recurits-one{
+	  margin-bottom: 50px;
+  }
+  .recurit-two{
+	  margin-bottom: 24px;
+  }
+  /* .recruits:after{
+	  content: "";
+	  position: absolute;
+	  top: -83px !important;
+	  height: 166px !important;
+  
+	  width: 100%;
+	  background: #01a3ae;
+	  padding: 0px !important;
+	  transform: skew(0deg, 6deg) !important;
+	  z-index: -1;
+	  left: 0px;
+  
+  } */
+  /* .recruits:before{
+	  content: "";
+	  position: absolute;
+	  bottom: -95px !important;
+	  height: 154px !important;
+	  width: 100%;
+	  background: #01a3ae;
+	  padding: 0px !important;
+	  transform: skew(0deg, 4deg) !important;
+	  z-index: -1;
+	  margin-bottom: 23px !important;
+	  left: 0px;
+  
+  } */
+  .recruits-left{
+	  float: left;
+	  margin-right: 57px;
+	  border-right: 1px solid #fff;
+	  padding-right: 57px;
+  }
+  .recruits-right{
+	  float: left;
+  }
+  .recruits-left p {
+	  font-size: 15px;
+	  padding:0px 0px 10px 0px;
+	  font-family: 'Roboto', sans-serif;
+  }
+  .recruits-left p:nth-child(4) {
+	  padding: 0px 0px 0px 0px;
+  }
+  .recruits-right p {
+	  font-size: 15px;
+	  padding: 0px 0px 9px 0px;
+	  font-family: 'Roboto', sans-serif;
+  }
+  .recruits-right p:nth-child(4) {
+	  padding: 0px 0px 0px 0px;
+  }
+  .recruits-title{
+	  font-size: 50px;
+	  font-weight: 900;
+	  /*margin: 50px 0px;*/
+	  position: relative;
+	  top: -54px;
+	  color: #ffff;
+	 font-family: 'Roboto', sans-serif;
+  }
+  .recuits-one{
+  margin-bottom: 54px;
+  }
+  /*============== Company Profile Css Start ====================*/
+  .company-profile{
+	  padding: 0px 120px;
+	  clear: both;
+	  margin-top: 47px;
+	  margin-bottom: 100px;
+  }
+  .main-company-content{
+	  display: flex;
+	  margin-top: 56px;
+  }
+  .company-profile-left{
+	 float: left;
+	  margin-right: 58px;
+	  border-right: 1px solid #000;
+	  padding-right: 57px;
+	  font-family: 'Roboto', sans-serif;
+  
+  }
+  .company-profile-right{
+	  float: left;
+  }
+  .company-profile-left p {
+	  font-size: 15px;
+	  padding: 0px 0px 15px 0px;
+	  font-family: 'Roboto', sans-serif;
+  }
+  .company-profile-left p:nth-child(9){
+  
+	  padding: 0px 0px 0px 0px;
+  
+  }
+  .company-profile-right p {
+	  font-size: 15px;
+	  padding: 0px 0px 14px 0px;
+	  font-family: 'Roboto', sans-serif;
+  }
+  .company-profile-title{
+	  font-size: 50px;
+	  font-weight: bold;
+	  /*margin: 50px 0px;*/
+  }
+  /*============== Company Profile Css end   ====================*/
+  
+  
+  
+  /*============== Button Css Start ====================*/
+  .btn-section{
+	  text-align: center;
+	  margin: 80px 0px;
+  }
+  .btn-image-angle{
+	  height: 30px;
+	  margin: 0px 0px -8px 0px;
+	  position: absolute;
+	  right: 22px;
+	  top: 26px;
+  }
+  
+  .map iframe{
+	  width: 100%;
+	  height: 450px;
+	  border:0px;
+  }
+  /*============== Button Css End ====================*/
+  
+  
+  
+  /*============== Footer Css Start ====================*/
+  footer{
+	  padding: 25px 120px;
+	  background-color: #1B1B1B;
+  }
+  
+  .footer-display-flex{
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+  }
+  
+  .footer-level-menu ul{
+	  display: flex;
+  }
+  .footer-level-menu ul li a{
+	  font-size: 16px;
+	  font-weight: 500;
+	  padding: 0px 0px 0px 40px;
+	  color: #fff;
+	  font-family: 'Roboto', sans-serif;
+  
+  }
+  .footer-logo img{
+	  height: 50px;
+  }
+  .copy-right-text{
+	  float: right;
+	  color: #fff;
+	  font-size: 16px;
+	  margin-top: 15px;
+  
+  }
+  /*============== Footer Css End ====================
+  
+  /* Responsive menu */
+  .overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+  	line-height: 70px;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+		padding: 6px;
+	  text-decoration: none;
+	  font-size: 24px;
+	  color: #000;
+	  display: block;
+	  transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
+  
+  .lang-menu{
+	 display: flex;
+	  position: relative;
+	  top: 48px;
+	  left: 40px;
+  
+  }
+  .lang-menu span a{
+	  font-size: 20px;
+	  color: #000;
+  }
+  .line {
+		  height: 25px;
+	  width: 2px;
+	  margin-top: 6px;
+	 
+  }
+  .main-menu{
+	  position: fixed;
+	  /*width: 100%;*/
+	  left: 0;
+	  /*background: #fff;*/
+	  top: 0;
+	  right: 0;
+	  padding: 18px 120px;
+  }
+  
+  .f1-table {
+		  position: relative;
+		  margin-top: 50px;
+  }
+  .f1-table tr td{
+		  padding-bottom: 15px;
+	  margin: 0;
+	  vertical-align: baseline;
+	  font-size: 15px;
+	  padding-right: 70px;
+  }
+  .f1-table::before{
+			  content: "";
+	  background: #000;
+	  height: 300px;
+	  width: 0.5px;
+	  border: 0px;
+	  position: absolute;
+	  left: 29%;
+	  transform: translateX(-10px);
+	  margin: 0px;
+  }
+  .right-cotnent{
+  padding-left: 30px;
+  }
+  
+  .inquery-heading h1{
+	font-size: 50px;
+	  /*margin: 60px 0px;*/
+  }
+  .inquery-heading p{
+	font-size: 20px;
+	padding: 59px 0px;
+  }
+  .inquiry-section {
+	  padding: 124px 0px 80px 120px;
+  }
+  .inquiry-form{
+	padding: 0px 100px;
+  }
+  .input-style{
+	width: 60%;
+  }
+  .input-style{
+	display: block;
+	  width: 100%;
+	  height: 45px;
+	  
+	  font-size: 16px;
+	  font-weight: 400;
+	  line-height: 1.5;
+	  color: #495057;
+	  background-color: #fff;
+	  background-clip: padding-box;
+	  border: 1px solid #ced4da;
+	  border-radius: 0px;
+	  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .single-input{
+	display: flex;
+	/*display: -ms-grid;
+	  grid-template-columns: 50% 50%;
+	  -ms-grid-template-columns: 50% 50%;*/
+	  align-items: center;
+	  -ms-align-items: center;
+	  margin-bottom: 23px;
+  }
+  .inquery-heading{
+	text-align: center;
+	/*padding-bottom: 100px;*/
+  }
+  .required{
+	background: #E30212;
+	  color: #fff;
+	  padding: 4px;
+	  font-size: 12px;
+	  margin-left: 12px;
+  }
+  .single-input label{
+	font-size: 16px;
+	width: 30%;
+	color: #3F3F3F;
+  }
+  .single-input input{
+	width: 60%;
+  }
+  .single-input textarea{
+	width: 60%;
+  }
+  .width-2x{
+	width: 40% !important;
+  }
+  .select-input{
+	height: 50px;
+  }
+  /* The container */
+  .single-checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 13px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-right: 5px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .single-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .single-checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .single-checkbox input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .single-checkbox input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .single-checkbox .checkmark:after {
+	 left: 6px;
+	 top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+  .custom-btn{
+	border: none;
+	padding: 24px 122px;
+	cursor: pointer;
+	margin-top: 30px;
+  }
+  
+  .textarea-input{
+	height: auto !important;
+  }
+  .all-checkbox {
+	width: 70%;
+  }
+  .all-checkbox label{
+	width: 17.5%;
+	float: left;
+  }
